@@ -31,7 +31,7 @@ let food = 'spicy curry';
 console.log(food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-let pets = 3;
+let pets = 2;
 console.log(pets);
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 1;
@@ -91,14 +91,11 @@ console.log(petStatus);
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 let mostPets;
-  if (pets > friendsPets){
+  if (pets >= friendsPets){
     mostPets = pets
   } 
   else if (pets < friendsPets){
     mostPets = friendsPets
-  }
-  else {
-    mostPets = 'Nobody has more pets'
   };
   console.log(mostPets);
 // 16 - Make a variable called `luckyResult`
@@ -109,7 +106,22 @@ let mostPets;
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
-
+let luckyResult;
+switch (luckyNumber) {
+  case 1:
+    luckyResult = 'First is the worst';
+    break;
+  case 2:
+    luckyResult = 'Second is the best';
+    break;
+  case 3:
+    luckyResult = 'Third is the one with the polka dot dress';
+    break;
+  default:
+    luckyResult = 'Luck is what happens when preparation meets opportunity';
+    break;
+}
+console.log(luckyResult);
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
 
